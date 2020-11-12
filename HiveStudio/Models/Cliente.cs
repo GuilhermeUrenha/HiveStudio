@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -8,16 +9,16 @@ namespace HiveStudio.Models
 {
     public class Cliente
     {
-        [Display(Name = "CPF")]
         [Key]
+        [Display(Name = "CPF")]
         [StringLength(14, MinimumLength = 11, ErrorMessage = "Máximo de 11 caracteres!")]
         [Required(ErrorMessage = "O campo é obrigatório!")]
         public string cpf { get; set; }
 
         [Display(Name = "Dígito")]
-        [StringLength(14, MinimumLength = 11, ErrorMessage = "Máximo de 2 caracteres!")]
+        [StringLength(2, ErrorMessage = "Máximo de 2 caracteres!")]
         [Required(ErrorMessage = "O campo é obrigatório!")]
-        public string cpf_dig { get; set; }
+        public sbyte cpf_dig { get; set; }
 
         [Display(Name = "Nome")]
         [StringLength(30, ErrorMessage = "Máximo de 30 caracteres!")]
@@ -34,18 +35,16 @@ namespace HiveStudio.Models
         [Required(ErrorMessage = "O campo é obrigatório!")]
         public string celular { get; set; }
 
+        [ForeignKey("Endereco")]
         [Display(Name = "Código de Endereço")]
-        //[StringLength(30, ErrorMessage = "Máximo de 30 caracteres!")]
-        [Required(ErrorMessage = "O campo é obrigatório!")]
-        [Key]
-        public int enderecoid { get; set; }
+        public int idEndereco { get; set; }
 
         [Display(Name = "Data de Registro")]
         public DateTime DataRegistro { get; set; }
 
+        [ForeignKey("Usuario")]
         [Display(Name = "Código de Usuário")]
         [Required(ErrorMessage = "O campo é obrigatório!")]
-        [Key]
-        public int usuarioid { get; set; }
+        public int idUsuario { get; set; }
     }
 }

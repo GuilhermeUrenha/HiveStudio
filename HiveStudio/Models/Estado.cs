@@ -8,12 +8,12 @@ namespace HiveStudio.Models
 {
     public class Estado
     {
-        [Display(Name = "Código de Estado")]
         [Key]
-        public string idEstado { get; set; }
+        [Display(Name = "Código de Estado")]
+        public int idEstado { get; set; }
         
         [Display(Name = "Nome")]
-        [StringLength(30, ErrorMessage = "Máximo de 30 caracteres!")]
+        [StringLength(50, ErrorMessage = "Máximo de 50 caracteres!")]
         [Required(ErrorMessage = "O campo é obrigatório!")]
         public string nome { get; set; }
     }

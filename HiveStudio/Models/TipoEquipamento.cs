@@ -8,12 +8,12 @@ namespace HiveStudio.Models
 {
     public class TipoEquipamento
     {
-        [Display(Name = "Código")]
         [Key]
+        [Display(Name = "Código")]
         public int idTipo { get; set; }
 
         [Display(Name = "Tipo")]
-        [StringLength(30, ErrorMessage = "Máximo de 30 caracteres!")]
+        [StringLength(50, ErrorMessage = "Máximo de 50 caracteres!")]
         [Required(ErrorMessage = "O campo é obrigatório!")]
         public string tipo { get; set; }
     }
