@@ -8,8 +8,8 @@ namespace HiveStudio.Models
 {
     public class Hostname
     {
-        [Display(Name = "Código de Host")]
         [Key]
+        [Display(Name = "Código de Host")]
         public int idHostname { get; set; }
 
         [Display(Name = "Nome de Host")]

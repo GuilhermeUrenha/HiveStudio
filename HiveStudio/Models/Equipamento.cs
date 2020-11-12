@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -8,8 +9,8 @@ namespace HiveStudio.Models
 {
     public class Equipamento
     {
-        [Display(Name = "Código de Equipamento")]
         [Key]
+        [Display(Name = "Código de Equipamento")]
         public string idEquipamento { get; set; }
 
         [Display(Name = "Marca")]
@@ -41,8 +42,8 @@ namespace HiveStudio.Models
         [Display(Name = "Data de Registro")]
         public DateTime dataRegistro { get; set; }
 
+        [ForeignKey("TipoEquipamento")]
         [Display(Name = "Código de Tipo")]
-        [Key]
         public long idTipo { get; set; }
     }
 }

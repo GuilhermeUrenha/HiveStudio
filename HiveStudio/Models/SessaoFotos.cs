@@ -14,8 +14,8 @@ namespace HiveStudio.Models
         //[Required(ErrorMessage = "O campo é obrigatório!")]
         public string path { get; set; }
 
-        [Display(Name = "Código")]
         [Key]
+        [Display(Name = "Código de Sessão")]
         public int idSessao { get; set; }
     }
 }

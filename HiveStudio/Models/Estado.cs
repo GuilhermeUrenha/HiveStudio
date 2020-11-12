@@ -8,8 +8,8 @@ namespace HiveStudio.Models
 {
     public class Estado
     {
-        [Display(Name = "Código de Estado")]
         [Key]
+        [Display(Name = "Código de Estado")]
         public string idEstado { get; set; }
         
         [Display(Name = "Nome")]

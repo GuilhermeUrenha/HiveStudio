@@ -8,8 +8,8 @@ namespace HiveStudio.Models
 {
     public class Venda
     {
-        [Display(Name = "Código")]
         [Key]
+        [Display(Name = "Código")]
         public string idVenda { get; set; }
 
         [Display(Name = "Preço Total")]

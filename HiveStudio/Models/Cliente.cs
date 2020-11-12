@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -8,8 +9,8 @@ namespace HiveStudio.Models
 {
     public class Cliente
     {
-        [Display(Name = "CPF")]
         [Key]
+        [Display(Name = "CPF")]
         [StringLength(14, MinimumLength = 11, ErrorMessage = "Máximo de 11 caracteres!")]
         [Required(ErrorMessage = "O campo é obrigatório!")]
         public string cpf { get; set; }
@@ -34,18 +35,18 @@ namespace HiveStudio.Models
         [Required(ErrorMessage = "O campo é obrigatório!")]
         public string celular { get; set; }
 
+        [ForeignKey("Endereco")]
         [Display(Name = "Código de Endereço")]
         //[StringLength(30, ErrorMessage = "Máximo de 30 caracteres!")]
         [Required(ErrorMessage = "O campo é obrigatório!")]
-        [Key]
         public int enderecoid { get; set; }
 
         [Display(Name = "Data de Registro")]
         public DateTime DataRegistro { get; set; }
 
+        [ForeignKey("Usuario")]
         [Display(Name = "Código de Usuário")]
         [Required(ErrorMessage = "O campo é obrigatório!")]
-        [Key]
         public int usuarioid { get; set; }
     }
 }

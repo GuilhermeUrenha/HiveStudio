@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -8,12 +9,12 @@ namespace HiveStudio.Models
 {
     public class Endereco
     {
-        [Display(Name = "Código de Endereço")]
         [Key]
+        [Display(Name = "Código de Endereço")]
         public int idEndereco { get; set; }
 
+        [ForeignKey("Cidade")]
         [Display(Name = "Código de Cidade")]
-        [Key]
         public int idCidade { get; set; }
 
         [Display(Name = "Logradouro")]
