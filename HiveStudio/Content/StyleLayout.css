@@ -1,0 +1,63 @@
+﻿body{
+    padding-top:0px;
+    padding-bottom:0px;
+}
+
+.menu {
+    padding: 0px;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background-color: #4CAF50;
+    transition: width 0.5s, height 2s;
+}
+
+#button {
+    position: relative;
+    border: none;
+    display:block;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+    #button:hover {
+        content: "";
+        background: #90EE90;
+        opacity: 1;
+        transition: all 0.8s
+    }
+
+.animation {
+    top: 400px !important;
+    opacity: 1;
+    animation-duration: 0.5s;
+}
+
+/*@keyframes up {
+    100% {
+        width: 300px;
+        height: 400px;
+    }
+
+    75% {
+        width: 250px;
+        height: 300px;
+    }
+
+    50% {
+        width: 200px;
+        height: 250px;
+    }
+
+    25% {
+        width: 150px;
+        height: 200px;
+    }
+}*/
