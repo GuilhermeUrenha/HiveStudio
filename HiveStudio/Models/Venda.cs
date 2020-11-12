@@ -10,12 +10,12 @@ namespace HiveStudio.Models
     {
         [Key]
         [Display(Name = "Código")]
-        public string idVenda { get; set; }
+        public int idVenda { get; set; }
 
         [Display(Name = "Preço Total")]
         //[StringLength(30, ErrorMessage = "Máximo de 30 caracteres!")]
         [Required(ErrorMessage = "O campo é obrigatório!")]
         //(10,2)
-        public string precoTotal { get; set; }
+        public decimal precoTotal { get; set; }
     }
 }

@@ -16,9 +16,9 @@ namespace HiveStudio.Models
         public string cpf { get; set; }
 
         [Display(Name = "Dígito")]
-        [StringLength(14, MinimumLength = 11, ErrorMessage = "Máximo de 2 caracteres!")]
+        [StringLength(2, ErrorMessage = "Máximo de 2 caracteres!")]
         [Required(ErrorMessage = "O campo é obrigatório!")]
-        public string cpf_dig { get; set; }
+        public sbyte cpf_dig { get; set; }
 
         [Display(Name = "Nome")]
         [StringLength(30, ErrorMessage = "Máximo de 30 caracteres!")]
@@ -37,9 +37,7 @@ namespace HiveStudio.Models
 
         [ForeignKey("Endereco")]
         [Display(Name = "Código de Endereço")]
-        //[StringLength(30, ErrorMessage = "Máximo de 30 caracteres!")]
-        [Required(ErrorMessage = "O campo é obrigatório!")]
-        public int enderecoid { get; set; }
+        public int idEndereco { get; set; }
 
         [Display(Name = "Data de Registro")]
         public DateTime DataRegistro { get; set; }
@@ -47,6 +45,6 @@ namespace HiveStudio.Models
         [ForeignKey("Usuario")]
         [Display(Name = "Código de Usuário")]
         [Required(ErrorMessage = "O campo é obrigatório!")]
-        public int usuarioid { get; set; }
+        public int idUsuario { get; set; }
     }
 }

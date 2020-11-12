@@ -13,7 +13,7 @@ namespace HiveStudio.Models
         public int idMetodo { get; set; }
 
         [Display(Name = "Método")]
-        [StringLength(30, ErrorMessage = "Máximo de 30 caracteres!")]
+        [StringLength(50, ErrorMessage = "Máximo de 50 caracteres!")]
         [Required(ErrorMessage = "O campo é obrigatório!")]
         public string metodo { get; set; }
     }

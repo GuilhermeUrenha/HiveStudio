@@ -10,10 +10,10 @@ namespace HiveStudio.Models
     {
         [Key]
         [Display(Name = "Código de Estado")]
-        public string idEstado { get; set; }
+        public int idEstado { get; set; }
         
         [Display(Name = "Nome")]
-        [StringLength(30, ErrorMessage = "Máximo de 30 caracteres!")]
+        [StringLength(50, ErrorMessage = "Máximo de 50 caracteres!")]
         [Required(ErrorMessage = "O campo é obrigatório!")]
         public string nome { get; set; }
     }

@@ -9,16 +9,16 @@ namespace HiveStudio.Models
 {
     public class Cidade
     {
-        [Display(Name = "Código de Cidade")]
         [Key]
+        [Display(Name = "Código de Cidade")]
         public int idCidade { get; set; }
 
-        [Display(Name = "Código de Estado")]
         [ForeignKey("Estado")]
+        [Display(Name = "Código de Estado")]
         public int idEstado { get; set; }
 
         [Display(Name = "Nome da Cidade")]
-        [StringLength(30, ErrorMessage = "Máximo de 30 caracteres!")]
+        [StringLength(200, ErrorMessage = "Máximo de 200 caracteres!")]
         [Required(ErrorMessage = "O campo é obrigatório!")]
         public string nome { get; set; }
     }

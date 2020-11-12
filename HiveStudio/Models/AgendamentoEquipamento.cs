@@ -9,12 +9,12 @@ namespace HiveStudio.Models
 {
     public class AgendamentoEquipamento
     {
-        [Display(Name = "Código de Agendamento")]
         [ForeignKey("Equipamento"), Column(Order = 0)]
+        [Display(Name = "Código de Agendamento")]
         public int idEquipamento { get; set; }
 
-        [Display(Name = "Código de Sessão")]
         [ForeignKey("SessaoFotos"), Column(Order = 1)]
+        [Display(Name = "Código de Sessão")]
         public int idSessao { get; set; }
     }
 }
