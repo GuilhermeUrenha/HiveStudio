@@ -32,7 +32,7 @@ namespace HiveStudio.Models
 
         [Display(Name = "Cargo")]//bit(2)
         [Required(ErrorMessage = "O campo é obrigatório!")]
-        public long cargo { get; set; }
+        public int cargo { get; set; }
 
         [Display(Name = "Email")]
         [StringLength(50, ErrorMessage = "Máximo de 50 caracteres!")]

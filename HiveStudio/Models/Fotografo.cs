@@ -44,7 +44,7 @@ namespace HiveStudio.Models
 
         [Display(Name = "Ativo")]
         [Required(ErrorMessage = "O campo é obrigatório!")]
-        public long isAtivo { get; set; }
+        public int isAtivo { get; set; }
 
         [Display(Name = "Pagamento por Hora")]
         [Required(ErrorMessage = "O campo é obrigatório!")]
