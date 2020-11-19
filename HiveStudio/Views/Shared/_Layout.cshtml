@@ -2,19 +2,37 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-    <title>@ViewBag.Title - Meu Aplicativo ASP.NET</title>
+    <title>Menu Animation</title>
     <link href="~/Content/StyleLayout.css" rel="stylesheet" />
     <script src="~/Scripts/ScriptLayout.js"></script>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body>
-    <button id="button" onclick="FuncAnimation()"><img src="https://img.pngio.com/hamburger-menu-menu-menu-bar-icon-png-and-vector-for-free-hamburger-menu-png-512_512.png" width="50" height="50" /></button>
-    <div id="menu">
-        
-    </div>
+<body class="mybody">
+    <input id="button" type="checkbox" style="display:none;" />
+
+    <label for="menu">
+        <div class="menu">
+            <div class="logo">
+                <center><img src="~/Content/hivelogo.png" style=" width: 30%; height: 40%;" /></center>
+            </div>
+            <div class="nav">
+                <center>
+                    <ul>
+                        <li><a href="~/Home/About">About</a></li><br />
+                        <li><a href="~/Home/Contact">Contact</a></li><br />
+                        <li><a href="~/Home/Index">Index</a></li>
+                    </ul>
+                </center>
+            </div>
+        </div>
+        <label for="button">
+            <div class="button"></div>
+        </label>
+    </label>
+
     @RenderBody()
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
