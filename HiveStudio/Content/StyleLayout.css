@@ -1,104 +1,118 @@
-﻿*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-}
-
-body.mybody{
-
-    width:100%;
-    height:100vh;
-
-    background-color:black;
-
-    display:flex;
+﻿
+body.mybody {
+    width: 100%;
 }
 
 .button {
-    width:100px;
-    height:100px;
-
-    opacity:0.6;
-
-    border-color:white;
-    border-style:solid;
-
-    position:relative;
-
-    transition:1.5s ease;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    transition:1s ease;
 }
 
-.button:after{
-    content:'';
-
-    position:absolute;
-    top:30%;
-    left:15%;
-
-    width:70%;
-    height:10%;
-
-    border-radius:20px;
-    
-    background-color:#fff;
-
-    transition:1.5s ease;
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
 }
 
-.button:before{
-    content:'';
-
-    position:absolute;
-    top:60%;
-    left:45%;
-
-    width:40%;
-    height:10%;
-
-    border-radius:20px;
-    
-    background-color:#fff;
-
-    transition:1.5s ease;
+label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 100px;
+    width: 100px;
 }
 
-.menu {
-    width: 250px;
-    height: 0px;
+label span{
+  position: absolute;
+  display: block;
+  height: 15px;
+  border-radius: 30px;
+  background: black;
+  transition: 0.25s ease-in-out;
+}
 
-    justify-content: center;
-    align-items: center;
-    
+label span:nth-child(1){
+  top: 10%;
+  width: 100%;
+}
+
+label span:nth-child(2){
+  top: 40%;
+  width: 100%;
+}
+
+label span:nth-child(3){
+  top: 70%;
+  width: 60%;
+}
+
+#checkbox-menu:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 45%;
+    background:#f16234;
+}
+
+#checkbox-menu:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 45%;
+    width: 100%;
+    background:#f16234;
+}
+
+
+.button:hover label span:nth-child(3) {
+    width: 100%;
+}
+
+.button:hover label span{
+    background:#f16234;
+    opacity:1;
+}
+
+.button:hover{
+    opacity:1;
+}
+
+#checkbox-menu:checked + label .menu{
+    height:300px;
+    opacity:1;
+}
+
+#checkbox-menu:checked + label .nav{
+    height:188px;
+    visibility:visible;
+}
+
+.menu{
+    width:300px;
+    height:0px;
+    transition:1.5s ease;
+    background:black;
     opacity:0;
-    position:relative;
-
-    transition:1.5s ease;
-
-    background-color:aquamarine;
 }
-
 .logo {
     position: relative;
     top: 5%
 }
 
 .nav {
-    position: relative;
-    top: 10%;
-    height: 0px;
-    visibility: hidden;
-    transition: 1.2s
+    height: 188px;
+    visibility:hidden;
+    transition: 1.2s;
 }
 
 ul {
-    list-style-type: none;
-    width: 100%;
     padding: 0px;
-    margin: 0px;
     overflow: hidden;
 }
 
 li a {
+
     display: block;
     color: #000;
     background-color: #666;
@@ -106,7 +120,7 @@ li a {
 }
 
 a{
-    padding-bottom:8px;
+    padding-bottom:9px;
     padding-top:8px;
 }
 
@@ -114,31 +128,4 @@ li a:hover{
     background-color: #555;
     color: white;
     text-decoration: none;
-}
-
-#button:checked ~ label .button:after {
-    transform: rotate(225deg);
-    top: 45%;
-    left: 15%;
-}
-
-#button:checked ~ label .button{
-    top: 45%;
-}
-
-#button:checked ~ label .button:before {
-    transform: rotate(-225deg);
-    top: 45%;
-    left: 15%;
-    width: 70%;
-    height: 10%;
-}
-
-#button:checked ~ label .menu{
-    height: 300px;
-    opacity:1;
-}
-
-#button:checked ~ label .nav {
-    visibility: visible;
 }

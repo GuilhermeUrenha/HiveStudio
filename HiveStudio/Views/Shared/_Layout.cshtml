@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta name="viewport" content="widht=device-width, initial-scale=1.0" />
+    <meta name="viewport" />
     <meta charset="utf-8" />
     <title>Menu Animation</title>
     <link href="~/Content/StyleLayout.css" rel="stylesheet" />
@@ -11,8 +11,7 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body class="mybody">
-    <input id="button" type="checkbox" style="display:none;" />
-
+    <input type="checkbox" id="checkbox-menu" />
     <label for="menu">
         <div class="menu">
             <div class="logo">
@@ -21,18 +20,23 @@
             <div class="nav">
                 <center>
                     <ul>
-                        <li><a href="~/Home/About">About</a></li><br />
-                        <li><a href="~/Home/Contact">Contact</a></li><br />
+                        <li><a href="~/Home/About">About</a></li>
+                        <br />
+                        <li><a href="~/Home/Contact">Contact</a></li>
+                        <br />
                         <li><a href="~/Home/Index">Index</a></li>
                     </ul>
                 </center>
             </div>
         </div>
-        <label for="button">
-            <div class="button"></div>
-        </label>
+        <div class="button">
+            <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
     </label>
-
     @RenderBody()
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
