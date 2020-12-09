@@ -152,6 +152,8 @@
     <Content Include="Content\hivelogo.png" />
     <Content Include="Content\imgtemplate.jpg" />
     <Content Include="Content\StyleLayout.css" />
+    <Content Include="Content\StyleLayout2.css" />
+    <Content Include="Content\StylePortfolio.css" />
     <Content Include="Content\StyleSlideshow.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -184,6 +186,8 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Portfolio.cshtml" />
+    <Content Include="Views\Shared\_Layout2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
