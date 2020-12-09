@@ -10,8 +10,6 @@ namespace HiveStudio.Controllers
     {
         public ActionResult Index()
         {
-            //teste commit
-            //Morango
             return View();
         }
 
@@ -30,6 +28,12 @@ namespace HiveStudio.Controllers
         }
         
         public ActionResult Portfolio()
+        {
+
+            return View();
+        }
+
+        public ActionResult Login()
         {
 
             return View();
