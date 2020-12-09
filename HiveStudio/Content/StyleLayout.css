@@ -123,9 +123,9 @@ label {
 
 .conta .btn {
     font-family: 'Raleway', sans-serif;
-    background-color: #291A14;
     border: none;
-    color: white;
+    color: black;
+    background: none;
     height: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -136,12 +136,12 @@ label {
 }
 
 .conta .btn:hover{
-    background-color: #f16234;
+    background-color: #291A14;
+    color:white;
 }
 
 .conta {
     position: absolute;
-    background-color: #291A14;
     right: 0;
     height: 90px;
 }
