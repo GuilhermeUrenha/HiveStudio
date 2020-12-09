@@ -22,13 +22,13 @@ label {
     display: block;
     height: 100px;
     width: 100%;
+    z-index: 999;
 }
 
 .checkbox-menu-label {
     width: 90px;
     height: 90px;
     cursor: pointer;
-    background: #291A14;
 }
 
 .checkbox-menu-label span {
@@ -77,6 +77,10 @@ label {
 
 #checkbox-menu:checked + label .button {
     padding-top: 381px;
+}
+
+#checkbox-menu:checked + label .checkbox-menu-label {
+    background: #291A14;
 }
 
 .button:hover label span:nth-child(3) {

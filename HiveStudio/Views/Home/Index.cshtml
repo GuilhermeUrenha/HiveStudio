@@ -1,3 +1,32 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+
+<link href="~/Content/StyleSlideshow.css" rel="stylesheet" />
+
+<div class="container">
+
+    <div data-am-gallery>
+
+        <!-- Radio -->
+        <input type="radio" name="gallery" id="img-1" checked />
+        <input type="radio" name="gallery" id="img-2" />
+        <input type="radio" name="gallery" id="img-3" />
+
+        <!-- Images -->
+        <div class="images">
+            <div class="image" style="background-image: url(https://i.pinimg.com/originals/e5/2b/bd/e52bbdf93d20303938706f1c9de87bf4.jpg);"></div>
+            <div class="image" style="background-image: url(https://hddesktopwallpapers.in/wp-content/uploads/2015/07/johnny-depp-wallpaper-sunglass.jpg);"></div>
+            <div class="image" style="background-image: url(https://i.pinimg.com/originals/d4/13/a9/d413a989efd0147c7ff2478efe79b26f.jpg);"></div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="navigation">
+            <label class="dot" for="img-1"></label>
+            <label class="dot" for="img-2"></label>
+            <label class="dot" for="img-3"></label>
+        </div>
+
+    </div>
+
+</div>
