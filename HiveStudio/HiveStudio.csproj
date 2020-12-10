@@ -193,6 +193,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\FotoController.cs" />
+    <Compile Include="Controllers\GerenteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -241,6 +243,8 @@
     <Content Include="Content\StyleContato.css" />
     <Content Include="Content\StyleLayout.css" />
     <Content Include="Content\StyleLayout2.css" />
+    <Content Include="Content\StyleLayoutFoto.css" />
+    <Content Include="Content\StyleLayoutFoto2.css" />
     <Content Include="Content\StylePortfolio.css" />
     <Content Include="Content\StyleSlideshow.css" />
     <Content Include="Content\util.css" />
@@ -379,11 +383,17 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Portfolio.cshtml" />
     <Content Include="Views\Shared\_Layout2.cshtml" />
-    <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Views\Home\RegistraFoto.cshtml" />
     <Content Include="Views\Home\Contato.cshtml" />
+    <Content Include="Views\Shared\_LayoutFoto.cshtml" />
+    <Content Include="Views\Shared\_LayoutFoto2.cshtml" />
+    <Content Include="Views\Shared\_LayoutGerente.cshtml" />
+    <Content Include="Views\Shared\_LayoutGerente2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Foto\" />
+    <Folder Include="Views\Gerente\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

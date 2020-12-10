@@ -6,27 +6,19 @@ using System.Web.Mvc;
 
 namespace HiveStudio.Controllers
 {
-    public class HomeController : Controller
+    public class GerenteController : Controller
     {
+        // GET: Gerente
         public ActionResult Index()
         {
             return View();
         }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Portfolio()
+        public ActionResult RegistraFoto()
         {
 
             return View();
         }
-
-        public ActionResult Contato()
+        public ActionResult RegistraGerente()
         {
 
             return View();
