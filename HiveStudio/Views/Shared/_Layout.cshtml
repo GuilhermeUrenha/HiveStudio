@@ -25,9 +25,10 @@
             <div class="nav">
                 <ul class='nav_list'>
                     <li><a href="~/Home/Portfolio">Portfólio</a></li>
-                    <li><a href="#">Solicitar Orçamento</a></li>
-                    <li><a href="#">Contato</a></li>
-            </div>
+                    <li><a href="~/Home/Contato">Contrato e Orçamento</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Nossa Equipe</a></li>
+</div>
         </div>
         <div class="button">
             <label for="checkbox-menu" class="checkbox-menu-label">
@@ -37,11 +38,9 @@
             </label>
         </div>
         <div class="conta">
-            <button class="btn"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</button>
-            <button class="btn"><i class="fa fa-sign-out" aria-hidden="true"></i> Cadastrar</button>
+            <button class="btn" onclick="location.href = 'Home/Login';"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</button>
         </div>
     </label>
-    <div class="header-mask"></div>
     @RenderBody()
     <div class="footer">
         <div id="button"></div>

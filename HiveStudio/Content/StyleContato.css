@@ -1,0 +1,63 @@
+﻿body {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing:3px;
+    background: #7B4E3D;
+}
+
+input[type=text], select, textarea, input[type=number] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: brown;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    position: relative;
+    bottom: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+.container {
+    border-radius: 10px;
+    background-color: #291A14;
+    padding: 20px;
+    left: 30px;
+    top: 16%;
+    color: wheat;
+    bottom: 30px;
+    position: absolute;
+    width: 65%;
+}
+
+.contato {
+    background-color: #291A14;
+    right: 80px;
+    position: absolute;
+    text-align: center;
+    width: 400px;
+    top: 16%;
+    color: wheat;
+    bottom: 316px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.titulo {
+    position: absolute;
+    left: 25%;
+    top: 90px;
+}

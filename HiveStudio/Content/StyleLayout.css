@@ -17,7 +17,7 @@ body.mybody {
     opacity: 0;
 }
 
-label {
+.menu-label {
     position: relative;
     display: block;
     height: 100px;
@@ -29,6 +29,9 @@ label {
     width: 90px;
     height: 90px;
     cursor: pointer;
+    position: relative;
+    display: block;
+    z-index: 999;
 }
 
 .checkbox-menu-label span {
@@ -76,7 +79,7 @@ label {
 }
 
 #checkbox-menu:checked + label .button {
-    padding-top: 381px;
+    padding-top: 420px;
 }
 
 #checkbox-menu:checked + label .checkbox-menu-label {
@@ -97,7 +100,7 @@ label {
 }
 
 #checkbox-menu:checked + label .menu {
-    height: 381px;
+    height: 420px;
     opacity: 1;
 }
 
