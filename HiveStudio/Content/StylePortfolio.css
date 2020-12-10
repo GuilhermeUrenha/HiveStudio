@@ -1,11 +1,8 @@
-﻿* {
-    box-sizing: border-box;
-}
-
+﻿
 body {
     margin: 0;
     font-family: Arial;
-    background: #291A14;
+    background: #7B4E3D;
 }
 
 .header {
@@ -25,6 +22,7 @@ body {
 .column {
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
+    box-sizing:border-box;
     max-width: 25%;
     padding: 0 4px;
 }

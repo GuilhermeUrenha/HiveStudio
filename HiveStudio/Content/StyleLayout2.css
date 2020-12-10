@@ -17,7 +17,7 @@ body.mybody {
     opacity: 0;
 }
 
-label {
+.menu-label {
     position: relative;
     display: block;
     height: 100px;
@@ -29,6 +29,9 @@ label {
     width: 90px;
     height: 90px;
     cursor: pointer;
+    position: relative;
+    display: block;
+    z-index: 999;
 }
 
 .checkbox-menu-label span {
@@ -130,12 +133,12 @@ label {
     position: absolute;
     top: 0;
     padding: 0;
-    background: #7B4E3D;
-    opacity: 0.2;
+    background: #291A14;
+    opacity: 1;
     height: 90px;
     width: 100%;
     z-index: 998;
-    border-bottom: solid gray;
+    border-bottom: solid black;
     border-bottom-width: 2px;
 }
 
@@ -154,7 +157,7 @@ label {
 }
 
 .conta .btn:hover{
-    background-color: #291A14;
+    background-color: #7B4E3D;
     color:white;
 }
 

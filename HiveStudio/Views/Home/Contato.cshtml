@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Contato";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="~/Content/StyleContato.css" rel="stylesheet" />
+</head>
+<body>
+
+    <h2 class="titulo">Solicite um orçamento</h2>
+
+    <div class="container">
+        <form action="/action_page.php">
+            <label for="nomecompleto">Nome Completo</label>
+            <input type="text" id="name" name="nomecompleto" placeholder="Seu nome completo">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="email@email.com">
+
+            <label for="telefone">Telefone ou Celular</label>
+            <input type="number" id="telefone" name="telefone" placeholder="(xx)xxxx-xxxx">
+
+            <label for="fotografo">Fotografo</label>
+            <select id="fotografo" name="fotografo">
+                <option value="1">Fotografo1</option>
+                <option value="2">Fotografo2</option>
+                <option value="3">Fotografo3</option>
+            </select>
+
+            <label for="cpf">CPF</label>
+            <input type="number" id="cpf" name="cpf" placeholder="Digite seu CPF">
+
+            <label for="orcamento">Orçamento</label>
+            <input type="number" id="orcamento" name="orcamento" placeholder="Digite um orçamento">
+
+            <label for="descricao">Descrição</label>
+            <textarea id="subject" name="subject" placeholder="De os detalhes de seu pedido" style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="contato">
+        <h2>Entre em contato</h2>
+        <br />
+        <h2>Telefone</h2>
+        <h3>(11) 2766-2303</h3>
+        <h2>Celular</h2>
+        <h3>(11) 98855-9503</h3>
+        <h2>Endereço</h2>
+        <h3>Rua Hugo Walter Puschnick, 260, Alto da Mooca, São Paulo, SP</h3>
+        <h2>Email</h2>
+        <h3>info.devstack@gmail.com</h3>
+        <br />
+    </div>
+
+</body>
+</html>
+
