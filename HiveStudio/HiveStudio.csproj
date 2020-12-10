@@ -389,11 +389,12 @@
     <Content Include="Views\Shared\_LayoutFoto2.cshtml" />
     <Content Include="Views\Shared\_LayoutGerente.cshtml" />
     <Content Include="Views\Shared\_LayoutGerente2.cshtml" />
+    <Content Include="Views\Gerente\Index.cshtml" />
+    <Content Include="Views\Gerente\Gerencia.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Foto\" />
-    <Folder Include="Views\Gerente\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

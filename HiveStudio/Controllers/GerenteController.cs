@@ -11,8 +11,15 @@ namespace HiveStudio.Controllers
         // GET: Gerente
         public ActionResult Index()
         {
+
             return View();
         }
+        public ActionResult Gerencia()
+        {
+
+            return View();
+        }
+
         public ActionResult RegistraFoto()
         {
 

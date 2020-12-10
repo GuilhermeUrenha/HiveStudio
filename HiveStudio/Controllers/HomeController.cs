@@ -31,5 +31,10 @@ namespace HiveStudio.Controllers
 
             return View();
         }
+        public ActionResult RegistraFoto()
+        {
+
+            return View();
+        }
     }
 }
