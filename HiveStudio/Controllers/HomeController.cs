@@ -13,13 +13,6 @@ namespace HiveStudio.Controllers
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
         public ActionResult Portfolio()
         {
 
@@ -31,6 +24,19 @@ namespace HiveStudio.Controllers
 
             return View();
         }
+
+        public ActionResult Login()
+        {
+
+            return View();
+        }
+
+        public ActionResult Equipe()
+        {
+
+            return View();
+        }
+
         public ActionResult RegistraFoto()
         {
 
