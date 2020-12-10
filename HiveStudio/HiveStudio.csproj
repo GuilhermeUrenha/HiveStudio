@@ -421,7 +421,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Foto\" />
-    <Folder Include="Views\Gerente\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
