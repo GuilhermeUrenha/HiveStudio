@@ -437,7 +437,7 @@ iframe {
 /*------------------------------------------------------------------
 [ Alert validate ]*/
 
-.validate-input {
+/*.validate-input {
   position: relative;
 }
 
@@ -521,7 +521,7 @@ iframe {
   -o-transform: translateY(50%);
   transform: translateY(50%);
   right: 5px;
-}
+}*/
 
 /*//////////////////////////////////////////////////////////////////
 [ Responsive ]*/

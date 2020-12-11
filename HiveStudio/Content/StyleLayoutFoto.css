@@ -79,7 +79,7 @@ body.mybody {
 }
 
 #checkbox-menu:checked + label .button {
-    padding-top: 420px;
+    padding-top: 381px;
 }
 
 #checkbox-menu:checked + label .checkbox-menu-label {
@@ -100,7 +100,7 @@ body.mybody {
 }
 
 #checkbox-menu:checked + label .menu {
-    height: 420px;
+    height: 381px;
     opacity: 1;
 }
 

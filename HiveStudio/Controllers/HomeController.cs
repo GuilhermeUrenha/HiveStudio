@@ -31,13 +31,13 @@ namespace HiveStudio.Controllers
             return View();
         }
 
-        public ActionResult Equipe()
+        public ActionResult RegistraFoto()
         {
 
             return View();
         }
 
-        public ActionResult RegistraFoto()
+        public ActionResult Equipe()
         {
 
             return View();

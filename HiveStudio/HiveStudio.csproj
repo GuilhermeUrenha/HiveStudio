@@ -226,7 +226,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\FotoController.cs" />
     <Compile Include="Controllers\GerenteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -276,7 +275,6 @@
     <Content Include="Content\imgtemplate.jpg" />
     <Content Include="Content\main.css" />
     <Content Include="Content\StyleContato.css" />
-    <Content Include="Content\StyleEquipe.css" />
     <Content Include="Content\StyleLayout.css" />
     <Content Include="Content\StyleLayout2.css" />
     <Content Include="Content\StyleLayoutFoto.css" />
@@ -416,24 +414,18 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Portfolio.cshtml" />
     <Content Include="Views\Shared\_Layout2.cshtml" />
-    <Content Include="Views\Home\RegistraFoto.cshtml" />
     <Content Include="Views\Home\Contato.cshtml" />
     <Content Include="Views\Shared\_LayoutFoto.cshtml" />
     <Content Include="Views\Shared\_LayoutFoto2.cshtml" />
-    <Content Include="Views\Shared\_LayoutGerente.cshtml" />
-    <Content Include="Views\Shared\_LayoutGerente2.cshtml" />
-    <Content Include="Views\Gerente\Index.cshtml" />
-    <Content Include="Views\Gerente\Gerencia.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Gerente\RegistraFoto.cshtml" />
     <Content Include="Views\Home\Equipe.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Foto\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

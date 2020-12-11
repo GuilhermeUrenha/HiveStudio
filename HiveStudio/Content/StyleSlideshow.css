@@ -104,7 +104,7 @@
 
     [data-am-gallery] .navigation {
         position: absolute;
-        bottom: 15px;
+        bottom: 50px;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
@@ -115,7 +115,6 @@
         width: 15px;
         height: 15px;
         margin: 0 2px;
-        bottom: 30px;
         border-radius: 50%;
         background-color: rgba(255, 255, 255, 0.8);
         cursor: pointer;

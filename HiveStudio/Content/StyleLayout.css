@@ -267,3 +267,27 @@ body.mybody {
     padding-top:10px;
     left:38%;
 }
+
+.footer .icons{
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    height: 100%;
+    width: 30%;
+    top: 10px;
+    display: inline-block;
+}
+
+.footer .fa{
+    padding: 20px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.footer .fa-whatsapp{
+    color: white;
+    background: #25D165
+}

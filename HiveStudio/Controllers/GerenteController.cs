@@ -14,18 +14,20 @@ namespace HiveStudio.Controllers
 
             return View();
         }
-        public ActionResult Gerencia()
-        {
-
-            return View();
-        }
 
         public ActionResult RegistraFoto()
         {
 
             return View();
         }
-        public ActionResult RegistraGerente()
+
+        public ActionResult Portfólio()
+        {
+
+            return View();
+        }
+
+        public ActionResult Contato()
         {
 
             return View();
