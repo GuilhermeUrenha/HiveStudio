@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(TLogin.Startup))]
-namespace TLogin
+[assembly: OwinStartupAttribute(typeof(HiveStudio.Startup))]
+namespace HiveStudio
 {
     public partial class Startup
     {
